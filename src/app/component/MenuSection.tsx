@@ -94,9 +94,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ items }) => {
                   <p className={styles.itemDesc}>{item.description}</p>
                 )}
                 <div className={styles.cardFooter}>
-                  <span className={styles.orderHint}>
-                    <Plus size={14} /> Incluir en el pedido
-                  </span>
+                 
                 </div>
               </div>
             </motion.div>

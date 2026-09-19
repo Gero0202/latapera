@@ -136,14 +136,14 @@
         "id": "20",
         "name": "Promo 2",
         "category": "promos",
-        "price": 0,
+        "price": 19500,
         "description": "1 napo + 1 4 quesos"
     },
     {
         "id": "21",
         "name": "Promo 3",
         "category": "promos",
-        "price": 0,
+        "price": 19800,
         "description": "1 muzza + 1 La Tapera"
     },
     {
