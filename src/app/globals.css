@@ -1,0 +1,43 @@
+/* app/globals.css */
+:root {
+  /* Fondos elegantes en tono cacao / café profundo */
+  --bg-dark: #1A1310;         /* Fondo base: marrón chocolate oscuro, sobrio y uniforme */
+  --bg-card: #241B17;         /* Tarjetas: un tono arriba, integrado sin cortes agresivos */
+  --bg-card-hover: #2E221D;   /* Transición suave al pasar el mouse/tocar */
+  
+  /* Detalles & Acentos */
+  --primary: #C85A17;         /* Naranja cobrizo sobrio para CTAs */
+  --primary-hover: #D86620;
+  --accent-gold: #E2C275;     /* Dorado satinado mate (elegante, no chillón) */
+  --accent-wood: #8C624A;
+  
+  /* Tipografía limpia y ultra legible */
+  --text-light: #F9F5F0;      /* Marfil suave (cálido para la vista) */
+  --text-muted: #B8A89E;      /* Arena grisáceo tenue pero claro */
+  
+  /* Bordes sutiles y Sombras profesionales */
+  --border-rustic: rgba(255, 255, 255, 0.05); /* Prácticamente invisible, solo textura */
+  --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.3); /* Elevación suave sin bordes */
+  --whatsapp-green: #25D366;
+  
+  --font-rustic: var(--font-rustic), Georgia, serif;
+  --font-body: var(--font-body), system-ui, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}

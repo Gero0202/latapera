@@ -1,0 +1,18 @@
+/* components/WhatsAppFAB/WhatsAppFAB.module.css */
+.fab {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 999;
+  background-color: var(--whatsapp-green);
+  color: #FFF;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}

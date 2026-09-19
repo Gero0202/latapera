@@ -1,0 +1,68 @@
+/* components/Header/Header.module.css */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  background-color: rgba(13, 7, 5, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-rustic);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logoIcon {
+  color: var(--primary);
+}
+
+.title {
+  display: block;
+  font-family: var(--font-rustic);
+  font-size: 1.2rem;
+  color: var(--accent-gold);
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.menuToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileNav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+}
+
+.mobileNav a {
+  padding: 1.1rem 1.5rem;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-rustic);
+}

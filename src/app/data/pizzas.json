@@ -1,0 +1,229 @@
+[
+    {
+        "id": "1",
+        "name": "Muzza",
+        "category": "pizzas",
+        "price": 8000,
+        "description": "Pizza clásica de mozzarella con salsa de tomate."
+    },
+    {
+        "id": "2",
+        "name": "Especial",
+        "category": "pizzas",
+        "price": 9400,
+        "description": "Pizza de mozzarella, jamón, morrón y aceitunas."
+    },
+    {
+        "id": "3",
+        "name": "Primavera",
+        "category": "pizzas",
+        "price": 10100,
+        "description": "Pizza de mozzarella, jamón, tomate y huevo."
+    },
+    {
+        "id": "4",
+        "name": "Calabresa",
+        "category": "pizzas",
+        "price": 10200,
+        "description": "Pizza de mozzarella y longaniza calabresa."
+    },
+    {
+        "id": "5",
+        "name": "Roquefort",
+        "category": "pizzas",
+        "price": 10500,
+        "description": "Pizza de mozzarella y queso roquefort."
+    },
+    {
+        "id": "6",
+        "name": "Roquefort y Jamón",
+        "category": "pizzas",
+        "price": 10600,
+        "description": "Pizza de mozzarella, queso roquefort y jamón."
+    },
+    {
+        "id": "7",
+        "name": "4 Quesos",
+        "category": "pizzas",
+        "price": 10600,
+        "description": "Pizza con sardo, roquefort, parmesano y mozzarella."
+    },
+    {
+        "id": "8",
+        "name": "5 Quesos",
+        "category": "pizzas",
+        "price": 12100,
+        "description": "Pizza con sardo, roquefort, parmesano, mozzarella y cheddar."
+    },
+    {
+        "id": "9",
+        "name": "Rúcula y Jamón",
+        "category": "pizzas",
+        "price": 11000,
+        "description": "Pizza de mozzarella, jamón y rúcula."
+    },
+    {
+        "id": "10",
+        "name": "La Argenta",
+        "category": "pizzas",
+        "price": 11900,
+        "description": "Pizza de mozzarella, cheddar y panceta."
+    },
+    {
+        "id": "11",
+        "name": "Napo",
+        "category": "pizzas",
+        "price": 10100,
+        "description": "Pizza de mozzarella, tomate y ajo."
+    },
+    {
+        "id": "12",
+        "name": "Fugga",
+        "category": "pizzas",
+        "price": 10100,
+        "description": "Pizza de mozzarella y cebolla."
+    },
+    {
+        "id": "13",
+        "name": "Salchipizza",
+        "category": "pizzas",
+        "price": 10700,
+        "description": "Pizza de mozzarella y salchichas."
+    },
+    {
+        "id": "14",
+        "name": "Hawaiana",
+        "category": "pizzas",
+        "price": 12000,
+        "description": "Pizza de mozzarella, jamón y ananá."
+    },
+    {
+        "id": "15",
+        "name": "La Tapera",
+        "category": "pizzas",
+        "price": 12800,
+        "description": "Pizza de pollo, cheddar y verdeo."
+    },
+    {
+        "id": "16",
+        "name": "Jamón, Roque y Nuez",
+        "category": "pizzas",
+        "price": 12300,
+        "description": "Pizza de jamón, queso roquefort y nuez."
+    },
+    {
+        "id": "17",
+        "name": "Pollo, Roque y Nuez",
+        "category": "pizzas",
+        "price": 13200,
+        "description": "Pizza de pollo, queso roquefort y nuez."
+    },
+    {
+        "id": "18",
+        "name": "Ananá",
+        "category": "pizzas",
+        "price": 11700,
+        "description": "Pizza de mozzarella y ananá."
+    },
+    {
+        "id": "19",
+        "name": "Promo 1",
+        "category": "promos",
+        "price": 16500,
+        "description": "1 muzza + 1 especial"
+    },
+    {
+        "id": "20",
+        "name": "Promo 2",
+        "category": "promos",
+        "price": 0,
+        "description": "1 napo + 1 4 quesos"
+    },
+    {
+        "id": "21",
+        "name": "Promo 3",
+        "category": "promos",
+        "price": 0,
+        "description": "1 muzza + 1 La Tapera"
+    },
+    {
+        "id": "22",
+        "name": "Coca Cola 2,5 Lt",
+        "category": "bebidas",
+        "subCategory": "gaseosas",
+        "price": 5500,
+        "description": "Coca Cola 2,5 litros"
+    },
+    {
+        "id": "23",
+        "name": "Coca Cola 1,5 Lt",
+        "category": "bebidas",
+        "subCategory": "gaseosas",
+        "price": 4800,
+        "description": "Coca Cola 1,5 litros"
+    },
+    {
+        "id": "24",
+        "name": "Lata Imperial Roja",
+        "category": "bebidas",
+        "subCategory": "cervezas",
+        "price": 3000,
+        "description": "Lata de cerveza Imperial Roja"
+    },
+    {
+        "id": "25",
+        "name": "Lata Baum Rubia",
+        "category": "bebidas",
+        "subCategory": "cervezas",
+        "price": 2500,
+        "description": "Lata de cerveza Baum Rubia"
+    },
+    {
+        "id": "26",
+        "name": "Lata Stella Artois",
+        "category": "bebidas",
+        "subCategory": "cervezas",
+        "price": 300,
+        "description": "Lata de cerveza Stella Artois"
+    },
+    {
+        "id": "27",
+        "name": "Imperial Lager",
+        "category": "bebidas",
+        "subCategory": "cervezas",
+        "price": 3000,
+        "description": "Cerveza Imperial Lager"
+    },
+    {
+        "id": "28",
+        "name": "Cordero con Piel de Lobo",
+        "category": "bebidas",
+        "subCategory": "vinos",
+        "price": 5400,
+        "description": "Vino Cordero con Piel de Lobo"
+    },
+    {
+        "id": "29",
+        "name": "Saint Felicien",
+        "category": "bebidas",
+        "subCategory": "vinos",
+        "price": 9500,
+        "description": "Vino Saint Felicien"
+    },
+    {
+        "id": "30",
+        "name": "Cosecha Tardía",
+        "category": "bebidas",
+        "subCategory": "vinos",
+        "price": 4900,
+        "description": "Vino Cosecha Tardía"
+    },
+    {
+        "id": "31",
+        "name": "Trumpeter",
+        "category": "bebidas",
+        "subCategory": "vinos",
+        "price": 9500,
+        "description": "Vino Trumpeter"
+    }
+]

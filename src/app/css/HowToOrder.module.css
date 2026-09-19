@@ -1,0 +1,205 @@
+/* HowToOrder.module.css */
+
+.container {
+  padding: 100px 24px;
+  background-color: #0d0d0d;
+  position: relative;
+  overflow: hidden;
+  color: #f5f5f5;
+}
+
+/* Resplandores de fondo rústicos / cálidos */
+.bgGlowLeft {
+  position: absolute;
+  top: 15%;
+  left: -8%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.12) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bgGlowRight {
+  position: absolute;
+  bottom: 10%;
+  right: -8%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.1) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.innerContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.headerGroup {
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.topBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background-color: rgba(234, 88, 12, 0.12);
+  color: #ea580c;
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.badgeIcon {
+  color: #ea580c;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-family: var(--font-rustic);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.75rem;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #a3a3a3;
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+.stepsWrapper {
+  position: relative;
+}
+
+.stepsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .stepsGrid {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+/* Tarjetas con efecto Glassmorphism y bordes sutiles */
+.stepCard {
+  position: relative;
+  flex: 1;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  padding: 2rem 1.75rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stepCard:hover {
+  border-color: rgba(234, 88, 12, 0.35);
+  background: linear-gradient(145deg, rgba(234, 88, 12, 0.08), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(234, 88, 12, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Número sobrio con tinte cálido */
+.stepNumber {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #d97706;
+  opacity: 0.9;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(234, 88, 12, 0.12);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  color: #ea580c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.stepCard:hover .iconWrapper {
+  transform: scale(1.08);
+  background: rgba(234, 88, 12, 0.2);
+  color: #f97316;
+}
+
+.cardBody {
+  text-align: left;
+}
+
+.stepTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2px;
+}
+
+.stepDesc {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  line-height: 1.6;
+}
+
+/* Indicador de flecha en desktop */
+.stepArrow {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .stepArrow {
+    display: flex;
+    position: absolute;
+    right: -1.15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ea580c;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+}
