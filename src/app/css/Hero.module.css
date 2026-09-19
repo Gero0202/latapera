@@ -1,83 +1,139 @@
 /* components/Hero/Hero.module.css */
+
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3rem 1.25rem;
-  background: radial-gradient(circle at top, #2A1F19 0%, #1A1310 70%);
-  padding-bottom: 10rem;
+  padding: 4rem 1.25rem 8rem 1.25rem;
+  background: radial-gradient(circle at top, #241710 0%, #140e0a 45%);
+  overflow: hidden;
+}
+
+/* Luces de fondo rústicas */
+.bgGlowTop {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.18) 0%, rgba(20, 14, 10, 0) 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bgGlowBottom {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.12) 0%, rgba(20, 14, 10, 0) 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 500px;
 }
 
 .badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.4rem 1rem;
-  background: rgba(226, 194, 117, 0.08);
-  border: 1px solid rgba(226, 194, 117, 0.2);
-  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #f59e0b;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 30px;
   margin-bottom: 1.25rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
 }
+
 .title {
   font-family: var(--font-rustic);
   font-size: 3.2rem;
-  color: var(--text-light);
+  color: #ffffff;
   line-height: 1;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  letter-spacing: 2px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(234, 88, 12, 0.2);
 }
 
 .slogan {
   font-family: var(--font-rustic);
-  font-size: 1.35rem;
-  color: var(--accent-gold);
-  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: #f59e0b;
+  margin-top: 0.6rem;
   margin-bottom: 1.25rem;
+  letter-spacing: 1px;
 }
 
 .description {
   font-size: 0.95rem;
-  color: var(--text-muted);
-  max-width: 340px;
-  margin: 0 auto 2rem auto;
-  line-height: 1.5;
+  color: #d4b8a5;
+  max-width: 233px;
+  margin: 0 auto 2.25rem auto;
+  line-height: 1.55;
 }
 
 .actions {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
-  width: 100%;
+  width: 70%;
   max-width: 290px;
   margin: 0 auto;
 }
 
-.btnPrimary, .btnWhatsapp {
+.btnPrimary, 
+.btnWhatsapp {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   padding: 0.9rem;
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
-  transition: transform 0.2s ease;
+  transition: all 0.25 ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .btnPrimary {
-  background-color: var(--primary);
-  color: #FFF;
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btnPrimary:hover {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
 }
 
 .btnWhatsapp {
-  background-color: var(--whatsapp-green);
-  color: #FFF;
+  background-color: #25d366;
+  color: #ffffff;
 }
 
-.btnPrimary:active, .btnWhatsapp:active {
-  transform: scale(0.97);
+.btnWhatsapp:hover {
+  background-color: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btnPrimary:active, 
+.btnWhatsapp:active {
+  transform: translateY(0) scale(0.98);
 }

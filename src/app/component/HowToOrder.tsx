@@ -30,12 +30,10 @@ export const HowToOrder: React.FC = () => {
 
   return (
     <section id="como-pedir" className={styles.container}>
-      {/* Resplandores de fondo estilo rústico / moderno */}
       <div className={styles.bgGlowLeft} />
       <div className={styles.bgGlowRight} />
 
       <div className={styles.innerContainer}>
-        {/* Encabezado */}
         <div className={styles.headerGroup}>
           <span className={styles.topBadge}>
             <Sparkles size={14} className={styles.badgeIcon} /> PASO A PASO
@@ -46,17 +44,20 @@ export const HowToOrder: React.FC = () => {
           </p>
         </div>
 
-        {/* Pasos */}
         <div className={styles.stepsWrapper}>
           <div className={styles.stepsGrid}>
             {steps.map((step, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.5, delay: idx * 0.15 }}
-                whileHover={{ y: -6 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.6,
+                  delay: idx * 0.12,
+                  ease: [0.215, 0.61, 0.355, 1], // easeOutCubic: ultra fluido
+                }}
+                whileHover={{ y: -6, transition: { duration: 0.2, ease: 'easeOut' } }}
                 className={styles.stepCard}
               >
                 <div className={styles.cardHeader}>

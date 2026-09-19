@@ -1,8 +1,42 @@
 /* components/MenuSection/MenuSection.module.css */
+
+/* Contenedor Exterior Principal */
+.section {
+  position: relative;
+  width: 100%;
+  background-color: #140e0a; /* Marrón rústico oscuro */
+  padding: 4.5rem 1rem;
+  overflow: hidden;
+}
+
+/* Luces de fondo ambientadas */
+.bgGlowLeft {
+  position: absolute;
+  top: 10%;
+  left: -15%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.15) 0%, rgba(20, 14, 10, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bgGlowRight {
+  position: absolute;
+  bottom: 15%;
+  right: -15%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.16) 0%, rgba(20, 14, 10, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .container {
-  padding: 3.5rem 1rem;
   max-width: 650px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 /* Header General */
@@ -17,21 +51,25 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--primary);
-  margin-bottom: 0.3rem;
+  color: #f59e0b;
+  background-color: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
 }
 
 .mainTitle {
   font-family: var(--font-rustic);
   font-size: 2.2rem;
-  color: var(--accent-gold);
+  color: #ffffff;
   letter-spacing: 1.5px;
   line-height: 1;
 }
 
 .mainSubtitle {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: #d4b8a5;
   margin-top: 0.5rem;
   line-height: 1.4;
 }
@@ -47,13 +85,13 @@
   gap: 0.6rem;
   margin-bottom: 1.25rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(226, 194, 117, 0.15);
+  border-bottom: 1px solid rgba(217, 119, 6, 0.2);
 }
 
 .categoryHeader h3 {
   font-family: var(--font-rustic);
   font-size: 1.35rem;
-  color: var(--text-light);
+  color: #ffffff;
   letter-spacing: 0.5px;
 }
 
@@ -61,9 +99,9 @@
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background-color: rgba(200, 90, 23, 0.12);
-  border: 1px solid rgba(200, 90, 23, 0.25);
-  color: var(--primary);
+  background-color: rgba(217, 119, 6, 0.18);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  color: #f59e0b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,16 +111,16 @@
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background-color: rgba(226, 194, 117, 0.15);
-  border: 1px solid rgba(226, 194, 117, 0.3);
-  color: var(--accent-gold);
+  background-color: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #f59e0b;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* ==================================================== */
-/* 1. ESTILOS TARJETAS PIZZAS                           */
+/* 1. TARJETAS PIZZAS                                   */
 /* ==================================================== */
 .itemsList {
   display: flex;
@@ -91,19 +129,20 @@
 }
 
 .itemCard {
-  background-color: var(--bg-card);
+  background: linear-gradient(145deg, rgba(255, 235, 215, 0.05), rgba(255, 255, 255, 0.01));
   border-radius: 14px;
   position: relative;
   overflow: hidden;
   display: flex;
-  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(217, 119, 6, 0.18);
+  backdrop-filter: blur(6px);
 }
 
 .accentBorder {
   width: 4px;
-  background: linear-gradient(180deg, var(--accent-gold) 0%, var(--primary) 100%);
-  opacity: 0.8;
+  background: linear-gradient(180deg, #f59e0b 0%, #ea580c 100%);
+  opacity: 0.9;
   flex-shrink: 0;
 }
 
@@ -133,7 +172,7 @@
 .itemName {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--text-light);
+  color: #ffffff;
   line-height: 1.25;
 }
 
@@ -144,9 +183,9 @@
   font-size: 0.625rem;
   font-weight: 700;
   padding: 0.15rem 0.5rem;
-  background: rgba(226, 194, 117, 0.12);
-  color: var(--accent-gold);
-  border: 1px solid rgba(226, 194, 117, 0.3);
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.35);
   border-radius: 12px;
   text-transform: uppercase;
 }
@@ -155,40 +194,28 @@
   font-family: var(--font-rustic);
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--accent-gold);
-  background-color: rgba(0, 0, 0, 0.25);
+  color: #f59e0b;
+  background-color: rgba(20, 14, 10, 0.6);
   padding: 0.3rem 0.7rem;
   border-radius: 8px;
-  border: 1px solid rgba(226, 194, 117, 0.2);
+  border: 1px solid rgba(217, 119, 6, 0.3);
   white-space: nowrap;
 }
 
 .itemDesc {
   font-size: 0.825rem;
-  color: var(--text-muted);
+  color: #d4b8a5;
   line-height: 1.45;
 }
 
 .cardFooter {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0.3rem;
-  padding-top: 0.4rem;
-  border-top: 1px dashed rgba(255, 255, 255, 0.05);
-}
-
-.orderHint {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 0.725rem;
-  font-weight: 600;
-  color: var(--primary);
-  opacity: 0.85;
+  margin-top: 0.1rem;
 }
 
 /* ==================================================== */
-/* 2. ESTILOS PROMOS ESPECIALES (TARJETAS BANNER)       */
+/* 2. PROMOS ESPECIALES                                 */
 /* ==================================================== */
 .promosGrid {
   display: flex;
@@ -197,20 +224,16 @@
 }
 
 .promoCard {
-  background: linear-gradient(
-    145deg,
-    rgba(36, 27, 23, 1) 0%,
-    rgba(46, 34, 29, 0.9) 100%
-  );
+  background: linear-gradient(145deg, rgba(35, 22, 14, 0.95) 0%, rgba(20, 14, 10, 0.98) 100%);
   border-radius: 16px;
-  border: 1px solid rgba(226, 194, 117, 0.25);
-  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.7);
   position: relative;
   overflow: hidden;
 }
 
 .promoTagHeader {
-  background: linear-gradient(90deg, var(--primary) 0%, #d86620 100%);
+  background: linear-gradient(90deg, #ea580c 0%, #d97706 100%);
   color: #fff;
   font-size: 0.65rem;
   font-weight: 800;
@@ -237,23 +260,23 @@
 .promoName {
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--text-light);
+  color: #ffffff;
   letter-spacing: 0.3px;
 }
 
 .promoBadge {
   font-size: 0.65rem;
   font-weight: 700;
-  color: var(--accent-gold);
-  background-color: rgba(226, 194, 117, 0.1);
+  color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.12);
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
-  border: 1px solid rgba(226, 194, 117, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
 .promoDesc {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: #d4b8a5;
   line-height: 1.45;
   margin-bottom: 1rem;
 }
@@ -263,14 +286,14 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 0.75rem;
-  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  border-top: 1px dashed rgba(217, 119, 6, 0.2);
 }
 
 .promoPriceLabel {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-muted);
+  color: #a38f82;
   font-weight: 600;
 }
 
@@ -278,12 +301,12 @@
   font-family: var(--font-rustic);
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--accent-gold);
-  text-shadow: 0 2px 10px rgba(226, 194, 117, 0.2);
+  color: #f59e0b;
+  text-shadow: 0 2px 10px rgba(245, 158, 11, 0.3);
 }
 
 /* ==================================================== */
-/* 3. ESTILOS BEBIDAS (PESTAÑAS + TARJETAS COMPACTAS)  */
+/* 3. BEBIDAS                                           */
 /* ==================================================== */
 .drinkTabs {
   display: flex;
@@ -291,7 +314,7 @@
   overflow-x: auto;
   padding-bottom: 0.75rem;
   margin-bottom: 1.25rem;
-  scrollbar-width: none; /* Ocultar scrollbar */
+  scrollbar-width: none;
 }
 
 .drinkTabs::-webkit-scrollbar {
@@ -299,9 +322,9 @@
 }
 
 .tabBtn {
-  background-color: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  color: var(--text-muted);
+  background-color: rgba(255, 235, 215, 0.04);
+  border: 1px solid rgba(217, 119, 6, 0.18);
+  color: #d4b8a5;
   padding: 0.5rem 0.9rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -315,9 +338,9 @@
 }
 
 .activeTab {
-  background: rgba(226, 194, 117, 0.15);
-  color: var(--accent-gold);
-  border-color: rgba(226, 194, 117, 0.4);
+  background: rgba(217, 119, 6, 0.22);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.5);
 }
 
 .drinksGrid {
@@ -327,14 +350,14 @@
 }
 
 .drinkCard {
-  background-color: var(--bg-card);
+  background: linear-gradient(145deg, rgba(255, 235, 215, 0.04), rgba(255, 255, 255, 0.01));
   padding: 0.85rem 1.15rem;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(217, 119, 6, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 15px -4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px -4px rgba(0, 0, 0, 0.5);
 }
 
 .drinkInfo {
@@ -346,17 +369,17 @@
 .drinkName {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--text-light);
+  color: #ffffff;
 }
 
 .drinkDesc {
   font-size: 0.75rem;
-  color: var(--text-muted);
+  color: #d4b8a5;
 }
 
 .drinkPrice {
   font-family: var(--font-rustic);
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--accent-gold);
+  color: #f59e0b;
 }
