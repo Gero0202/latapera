@@ -63,7 +63,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ items }) => {
             <div className={styles.catIconWrapper}>
               <Flame size={18} />
             </div>
-            <h3>Pizzas a la Leña</h3>
+            <h3>Pizzas</h3>
           </div>
 
           <div className={styles.itemsList}>

@@ -1,0 +1,173 @@
+.section {
+  position: relative;
+  padding: 8rem 1.5rem 9rem 1.5rem;
+  background-color: #140e0a;
+  background-image: 
+    radial-gradient(
+      circle at center, 
+      rgba(45, 27, 18, 0.9) 0%, 
+      rgba(20, 14, 10, 0.98) 85%
+    ),
+    url('/back-hero.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  border-top: 1px solid rgba(217, 119, 6, 0.15);
+    background-blend-mode: multiply; /* o 'overlay' */
+  background-attachment: fixed;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.2) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+  max-width: 850px;
+  min-height: 380px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido Central */
+.centerContent {
+  max-width: 520px;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #f59e0b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 30px;
+  margin-bottom: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-family: var(--font-rustic, 'Playfair Display', serif);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.brand {
+  color: #f59e0b;
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: #c4b5fd;
+  color: #d4b8a5;
+  line-height: 1.6;
+}
+
+/* --- TARJETAS FLOTANTES --- */
+
+.floatingCard {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.15rem;
+  background: rgba(36, 23, 16, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 50px;
+  color: #f3f4f6;
+  font-weight: 600;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(234, 88, 12, 0.1);
+  white-space: nowrap;
+  pointer-events: none; /* No interfieren con el scroll o clicks */
+  z-index: 1;
+}
+
+/* Posicionamiento Absoluto alrededor del texto */
+
+.cardTopLeft {
+  top: 5%;
+  left: 2%;
+}
+
+.cardTopRight {
+  top: 8%;
+  right: 2%;
+}
+
+.cardBottomLeft {
+  bottom: 8%;
+  left: 5%;
+}
+
+.cardBottomRight {
+  bottom: 5%;
+  right: 5%;
+}
+
+/* Íconos */
+.iconGold {
+  color: #f59e0b;
+}
+
+.iconRed {
+  color: #ef4444;
+}
+
+/* Responsive para Celulares */
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 1.25rem 6rem 1.25rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  /* En celulares reubicamos las cards para que no queden fuera de pantalla */
+  .cardTopLeft {
+    top: -5%;
+    left: 0%;
+  }
+
+  .cardTopRight {
+    top: -5%;
+    right: 0%;
+  }
+
+  .cardBottomLeft {
+    bottom: -8%;
+    left: 2%;
+  }
+
+  .cardBottomRight {
+    bottom: -8%;
+    right: 2%;
+  }
+
+  .floatingCard {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.75rem;
+  }
+}

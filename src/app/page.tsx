@@ -9,6 +9,7 @@ import { InfoSection } from "./component/InfoSection";
 import { WhatsAppFAB } from "./component/WhatsAppFAB";
 import { Footer } from "./component/Footer";
 import { AboutSection } from "./component/AboutSection";
+import { FinalCta } from "./component/FinalCta";
 
 
 
@@ -30,6 +31,7 @@ export default function Home() {
       />
       <WhatsAppFAB whatsappNumber="5492214347124"/>
       <AboutSection imageSrc="/aboutus.jpg" />
+      <FinalCta/>
       <Footer/>
     </>
   );
