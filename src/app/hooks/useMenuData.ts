@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import { MenuItem } from '../component/MenuSection';
 
-const GOOGLE_SHEETS_CSV_URL = process.env.MENU_SHEET_URL || '';
+const GOOGLE_SHEETS_CSV_URL = process.env.NEXT_PUBLIC_MENU_SHEET_URL || '';
 
 export const useMenuData = () => {
   const [items, setItems] = useState<MenuItem[]>([]);
