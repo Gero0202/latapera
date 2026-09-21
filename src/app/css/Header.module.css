@@ -12,6 +12,40 @@
   border-bottom: 1px solid var(--border-rustic);
 }
 
+/* Contenedor relativo para posicionar la luz */
+.logoWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+/* Luz suave de fondo estilo Glow */
+.logoGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.45) 0%, #d97706a1 60%, transparent 100%);
+  filter: blur(10px);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Imagen con realce de contraste y silueta clara */
+.logoImage {
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+  /* El drop-shadow genera una silueta cálida si el PNG tiene partes negras/oscuras */
+  filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.3));
+}
+
 .brand {
   display: flex;
   align-items: center;

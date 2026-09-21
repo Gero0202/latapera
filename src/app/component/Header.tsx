@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Menu, X, Flame } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from '@/app/css/Header.module.css';
+import Image from 'next/image';
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,15 +13,25 @@ export const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.brand}>
-        <Flame className={styles.logoIcon} size={22} />
+        {/* <Flame className={styles.logoIcon} size={22} /> */}
+        <div className={styles.logoWrapper}>
+          <div className={styles.logoGlow} />
+          <Image
+            src="/icono.png"
+            width={50}
+            height={50}
+            alt="La Tapera Icono"
+            className={styles.logoImage}
+          />
+        </div>
         <div>
           <span className={styles.title}>LA TAPERA</span>
           <span className={styles.subtitle}>HORNO DE BARRO</span>
         </div>
       </div>
 
-      <button 
-        className={styles.menuToggle} 
+      <button
+        className={styles.menuToggle}
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Menú"
       >
@@ -29,7 +40,7 @@ export const Header: React.FC = () => {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.nav 
+          <motion.nav
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
