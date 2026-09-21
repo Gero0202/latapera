@@ -22,7 +22,7 @@ export default function Home() {
       <Header/>
       <Hero whatsappNumber="5492214347124"/>
       <HowToOrder/>
-      <MenuSection items={items} />
+      <MenuSection />
       <InfoSection
         address="Av. 66 e/ 16 y 17, La Plata"
         hours="Martes a Domingo: 18:00 - 22:00"

@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageCircle, UtensilsCrossed } from 'lucide-react';
+import { Flame, MessageCircle, UtensilsCrossed } from 'lucide-react';
 import styles from '@/app/css/Hero.module.css';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -24,7 +24,7 @@ export const Hero: React.FC<HeroProps> = ({ whatsappNumber }) => {
         transition={{ duration: 0.8 }}
         className={styles.content}
       >
-        <div className={styles.badge}>🔥 Horno de Barro a Leña</div>
+        <div className={styles.badge}> <Flame size={20}/> Horno de Barro a Leña</div>
         <h1 className={styles.title}>LA TAPERA</h1>
         <p className={styles.slogan}>El campo en tu mesa</p>
 
