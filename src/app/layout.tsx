@@ -16,7 +16,7 @@ const bodyFont = Montserrat({
 
 export const metadata = {
   title: 'La Tapera | Pizzería de Horno de Barro',
-  description: 'El campo en tu mesa. Pizzas a la leña en horno de barro.',
+  description: 'Pizzas a la leña en horno de barro.',
 };
 
 export default function RootLayout({
