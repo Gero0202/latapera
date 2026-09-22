@@ -129,7 +129,7 @@ export const MenuSection: React.FC = () => {
             >
               <div className={styles.specialHeader}>
                 <span className={styles.specialBadge}>
-                  <Sparkles size={12} /> Edición Limitada
+                  <Sparkles size={12} /> 
                 </span>
               </div>
               <div className={styles.specialContent}>
