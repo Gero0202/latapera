@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Flame, MessageCircle, UtensilsCrossed } from 'lucide-react';
+import { Flame, MessageCircle, Motorbike, ShoppingBag, UtensilsCrossed } from 'lucide-react';
 import styles from '@/app/css/Hero.module.css';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -32,6 +32,34 @@ export const Hero: React.FC<HeroProps> = ({ whatsappNumber }) => {
           Masa artesanal, ingredientes seleccionados y el inconfundible sabor del barro ancestral.
         </p>
 
+
+             <div className={styles.floatingBadgesContainer}>
+          <motion.div 
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className={`${styles.floatingBadgeCard} ${styles.cardDelivery}`}
+          >
+            <div className={styles.badgeIconWrapper}>
+              <Motorbike size={16} />
+            </div>
+            <span><strong>Delivery</strong> para hornear</span>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+           className={`${styles.floatingBadgeCard} ${styles.cardTakeAway}`}
+          >
+            <div className={styles.badgeIconWrapper}>
+              <ShoppingBag size={16} />
+            </div>
+            <span><strong>Take away</strong> horneadas o para hornear</span>
+          </motion.div>
+        </div>
+
+
         <div className={styles.actions}>
           <a href="#menu-pizzas" className={styles.btnPrimary}>
             <UtensilsCrossed size={18} /> Ver Carta Completa
@@ -45,6 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ whatsappNumber }) => {
             <FaWhatsapp size={18} /> Pedir por WhatsApp
           </a>
         </div>
+
       </motion.div>
     </section>
   );

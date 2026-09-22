@@ -208,7 +208,7 @@ const directMapUrl = "https://www.google.com/maps/search/?api=1&query=-34.935036
               rel="noopener noreferrer"
               className={styles.igBtn}
             >
-              @{instagramUser.replace('@', '')} <ExternalLink size={14} />
+              @latapera <ExternalLink size={14} />
             </a>
           </motion.div>
 
