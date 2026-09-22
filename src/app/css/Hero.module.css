@@ -75,7 +75,7 @@
 }
 
 .title {
-  font-family: var(--font-rustic);
+  font-family: var(--font-title);
   font-size: 3.2rem;
   color: #ffffff;
   line-height: 1;

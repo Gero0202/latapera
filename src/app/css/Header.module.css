@@ -58,7 +58,7 @@
 
 .title {
   display: block;
-  font-family: var(--font-rustic);
+  font-family: var(--font-title);
   font-size: 1.2rem;
   color: var(--accent-gold);
   letter-spacing: 1px;

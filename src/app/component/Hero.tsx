@@ -29,7 +29,7 @@ export const Hero: React.FC<HeroProps> = ({ whatsappNumber }) => {
         <p className={styles.slogan}>El campo en tu mesa</p>
 
         <p className={styles.description}>
-          Masa artesanal estacionada, ingredientes seleccionados y el inconfundible sabor del barro ancestral.
+          Masa artesanal, ingredientes seleccionados y el inconfundible sabor del barro ancestral.
         </p>
 
         <div className={styles.actions}>

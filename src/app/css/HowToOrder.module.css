@@ -70,7 +70,7 @@
   color: #ffffff;
   letter-spacing: 1px;
   line-height: 1.2;
-  font-family: var(--font-rustic);
+  font-family: var(--font-title);
 }
 
 @media (min-width: 768px) {

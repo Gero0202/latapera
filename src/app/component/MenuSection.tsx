@@ -119,6 +119,39 @@ export const MenuSection: React.FC = () => {
                 </motion.div>
               ))}
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.4 }}
+              className={styles.monthlySpecialCard}
+            >
+              <div className={styles.specialHeader}>
+                <span className={styles.specialBadge}>
+                  <Sparkles size={12} /> Edición Limitada
+                </span>
+              </div>
+              <div className={styles.specialContent}>
+                <div className={styles.specialInfo}>
+                  <h4 className={styles.specialTitle}>VARIEDAD DEL MES</h4>
+                  <p className={styles.specialDesc}>
+                    Consultar con nuestro personal o hacé clic en el botón para conocer la especialidad destacada.
+                  </p>
+                </div>
+                
+                {/* BOTÓN CON ENLACE DIRECTO A WHATSAPP */}
+                <a
+                  href="https://wa.me/5492214347124?text=Hola!%20Quiero%20consultar%20por%20la%20variedad%20del%20mes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.specialPriceBtn}
+                >
+                  Consultar
+                </a>
+              </div>
+            </motion.div>
+            {/* 👆 FIN CARD ESPECIAL 👆 */}
           </div>
         )}
 

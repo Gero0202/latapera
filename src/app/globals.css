@@ -22,6 +22,7 @@
   
   --font-rustic: var(--font-rustic), Georgia, serif;
   --font-body: var(--font-body), system-ui, sans-serif;
+  --title-font: (var(--title-font))
 }
 
 *{

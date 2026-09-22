@@ -111,7 +111,7 @@ export const FinalCta: React.FC = () => {
           </h2>
 
           <p className={styles.subtitle}>
-            Vení a buscar tu pedido recién salido del horno de barro o sentate a compartir el sabor inconfundible de la leña.
+           Vení a buscar tu pedido o sentate a compartir el sabor inconfundible de la leña.
           </p>
         </motion.div>
 

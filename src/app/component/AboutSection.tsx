@@ -12,7 +12,7 @@ interface AboutSectionProps {
 }
 
 export const AboutSection: React.FC<AboutSectionProps> = ({
-    imageSrc = '/images/aboutus.jpg', // Reemplazá por la ruta de tu foto
+    imageSrc = '/about-us2.png', // Reemplazá por la ruta de tu foto
 }) => {
     // Variantes para animar la entrada escalonada
     const containerVariants: Variants = {
@@ -73,7 +73,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                             {/* Podés usar <Image /> de Next.js o un <img> tradicional */}
                             <div className={styles.imageContainer}>
                                 <Image
-                                    src={imageSrc}
+                                    src={"/about-us2.jpeg"}
                                     alt="Nuestra historia y nuestros clientes"
                                     fill
                                     className={styles.image}
@@ -110,14 +110,12 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                         </motion.h2>
 
                         <motion.p variants={itemVariants} className={styles.description}>
-                            En <strong>La Tapera</strong>, cada plato está pensado para compartir momentos inolvidables.
-                            Nuestros clientes no son solo comensales: son amigos, vecinos y familias que nos eligen día a día
-                            para disfrutar de sabores auténticos, ingredientes seleccionados y una atención cálida y cercana.
+                            Hay lugares que no necesitan inventar una historia, porque ya nacieron con una. Entre la leña, el horno de barro y la tranquilidad del campo, aprendimos que lo mejor se hace con tiempo. Porque cocinar nunca fue solo hacer pizzas, fue compartir una tradicion.
+                            <strong>La Tapera</strong> nace entre hermanos y cuñados y su fuerza para empujar día a día; y así como se gesta desde el origen, queremos que del mismo modo llegue a destino. Por eso nuestros clientes no son solo comensales: son amigos, vecinos y familias que nos eligen día a día para disfrutar el sabor autentico de la masa al horno de barro e ingredientes seleccionados.
                         </motion.p>
 
                         <motion.p variants={itemVariants} className={styles.description}>
-                            Desde el primer día, nuestra misión fue clara: crear un espacio donde la tradición casera
-                            se encuentre con la pasión por la buena mesa. Nos llena de orgullo ver cómo nuestra mesa sigue creciendo junto a ustedes.
+                            Desde el primer día, nuestra misión fue clara: crear un espacio donde la tradición casera se encuentre con la pasión por la buena mesa. Nos llena de orgullo ver cómo nuestra mesa sigue creciendo junto a ustedes.
                         </motion.p>
 
                         {/* Métrica / Stats Cards */}

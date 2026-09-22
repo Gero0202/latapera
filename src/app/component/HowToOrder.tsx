@@ -24,7 +24,7 @@ export const HowToOrder: React.FC = () => {
       stepNumber: '03',
       icon: <Sparkles size={22} />,
       title: '¡A disfrutar!',
-      desc: 'Recibí tu pizza recién salida del horno de barro, crocante y caliente en tu mesa.',
+      desc: 'Todo listo para compartir.',
     },
   ];
 

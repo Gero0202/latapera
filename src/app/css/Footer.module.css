@@ -7,7 +7,7 @@
 }
 
 .brand {
-  font-family: var(--font-rustic);
+  font-family: var(--font-title);
   font-size: 1rem;
   color: var(--accent-gold);
   letter-spacing: 1px;
